@@ -1,0 +1,7 @@
+<%= form_for @recipe do |f| %>
+  <label for="recipe_name">Name</label>
+  <%= f.text_field :name, class: "form-control"%><br>
+  <label for="recipe_instructions">Instructions</label>
+  <%= f.text_area :instructions, class: "form-control" %><br>
+  <%= f.submit "Save Recipe", class: "btn btn-block btn-default" %>
+<% end %>
